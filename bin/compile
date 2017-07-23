@@ -7,6 +7,9 @@ set -e
 # debug
 # set -x
 
+# Get the certificate for Discord
+certmgr -ssl https://gateway.discord.gg
+
 # parse and derive params
 BUILD_DIR=$1
 CACHE_DIR=$2
